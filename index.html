@@ -10,6 +10,11 @@
    rel="stylesheet"
   />
 
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+  />
+
   <style>
    body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -125,6 +130,60 @@
    .experience-image img {
     object-fit: contain;
    }
+
+   .social-icons {
+    margin-top: 20px;
+   }
+
+   .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+   }
+
+   .social-icons a:hover {
+    transform: scale(1.2);
+    color: #37ac62;
+   }
+
+   .contact-footer {
+    background: linear-gradient(135deg, #05290f 0%, #065748 100%);
+    color: white;
+    padding: 60px 0;
+    margin: 0;
+   }
+
+   .contact-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #37ac62;
+   }
+
+   .contact-footer .form-label {
+    color: white;
+    font-weight: 500;
+   }
+
+   .contact-footer .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+   }
+
+   .contact-footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+   }
+
+   .contact-footer .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #37ac62;
+    box-shadow: 0 0 0 0.2rem rgba(55, 172, 98, 0.25);
+    color: white;
+   }
   </style>
  </head>
  <body>
@@ -139,6 +198,18 @@
       />
       <h1 class="display-4 mb-2">Alexander Espejo</h1>
       <h3 class="mb-0">CS @ UCI</h3>
+      <div class="social-icons">
+       <a href="https://github.com/alexespejo" target="_blank" title="GitHub">
+        <i class="bi bi-github"></i>
+       </a>
+       <a
+        href="https://linkedin.com/in/alexespejo"
+        target="_blank"
+        title="LinkedIn"
+       >
+        <i class="bi bi-linkedin"></i>
+       </a>
+      </div>
      </div>
     </div>
    </div>
@@ -278,6 +349,43 @@
        </div>
        <div class="experience-image">
         <img src="ics.svg" alt="ICS Student Council Logo" />
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section class="contact-footer">
+     <div class="container">
+      <h2 class="contact-title">Contact Me</h2>
+      <div class="row justify-content-center">
+       <div class="col-md-8 col-lg-6">
+        <form>
+         <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+           type="email"
+           class="form-control"
+           id="email"
+           placeholder="your.email@example.com"
+           required
+          />
+         </div>
+         <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+           class="form-control"
+           id="message"
+           rows="5"
+           placeholder="Tell me about your project or just say hello..."
+           required
+          ></textarea>
+         </div>
+         <div class="d-grid">
+          <button type="submit" class="btn btn-light btn-lg">
+           Send Message
+          </button>
+         </div>
+        </form>
        </div>
       </div>
      </div>
