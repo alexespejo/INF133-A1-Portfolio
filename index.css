@@ -1,0 +1,168 @@
+body {
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ line-height: 1.6;
+}
+
+.header-section {
+ background: linear-gradient(135deg, #05290f 0%, #065748 100%);
+ color: white;
+ padding: 60px 0;
+ text-align: center;
+}
+
+.profile-img {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 5px solid white;
+ margin-bottom: 20px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+ padding: 60px 0;
+}
+
+.section-title {
+ color: #333;
+ margin-bottom: 30px;
+ padding-bottom: 10px;
+ border-bottom: 3px solid #000000;
+}
+
+.company-name,
+.project-name {
+ font-weight: bold;
+ color: #333;
+}
+
+.date-range {
+ font-style: italic;
+ color: #666;
+}
+
+.school-name {
+ font-weight: bold;
+}
+
+.course-list {
+ font-style: italic;
+}
+
+.experience-item,
+.project-item {
+ margin-bottom: 30px;
+ padding: 20px;
+ border-left: 4px solid #37ac62;
+ background-color: #f8f9fa;
+}
+
+.experience-content {
+ display: flex;
+ gap: 20px;
+ align-items: center;
+}
+
+.experience-text {
+ flex: 1;
+}
+
+.experience-image {
+ flex-shrink: 0;
+ width: 150px;
+ height: 150px;
+}
+
+.experience-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 8px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+ .experience-content {
+  flex-direction: column;
+ }
+
+ .experience-image {
+  width: 100%;
+  height: 200px;
+  align-self: center;
+ }
+}
+
+.education-item {
+ margin-bottom: 30px;
+ padding: 20px;
+ border-left: 4px solid #37ac62;
+ background-color: #f8f9fa;
+}
+
+ul {
+ margin-top: 15px;
+}
+
+li {
+ margin-bottom: 8px;
+}
+
+.experience-image img {
+ object-fit: contain;
+}
+
+.social-icons {
+ margin-top: 20px;
+}
+
+.social-icons a {
+ color: white;
+ text-decoration: none;
+ margin: 0 15px;
+ font-size: 2rem;
+ transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+ transform: scale(1.2);
+ color: #37ac62;
+}
+
+.contact-footer {
+ background: linear-gradient(135deg, #05290f 0%, #065748 100%);
+ color: white;
+ padding: 60px 0;
+ margin: 0;
+}
+
+.contact-title {
+ color: white;
+ text-align: center;
+ margin-bottom: 40px;
+ padding-bottom: 10px;
+ border-bottom: 3px solid #37ac62;
+}
+
+.contact-footer .form-label {
+ color: white;
+ font-weight: 500;
+}
+
+.contact-footer .form-control {
+ background-color: rgba(255, 255, 255, 0.1);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ color: white;
+}
+
+.contact-footer .form-control::placeholder {
+ color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-footer .form-control:focus {
+ background-color: rgba(255, 255, 255, 0.15);
+ border-color: #37ac62;
+ box-shadow: 0 0 0 0.2rem rgba(55, 172, 98, 0.25);
+ color: white;
+}
